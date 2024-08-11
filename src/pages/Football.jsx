@@ -3,12 +3,9 @@ import '../App.css';
 import Countries from '../components/countries';
 
 
-const Football = () => {
+const AllCountries = () => {
   return (
     <div>
-      
-        <h1>One Stop Sports</h1>
-      
       
       <Countries />
       
@@ -16,4 +13,4 @@ const Football = () => {
   );
 };
 
-export default Football;
+export default AllCountries;

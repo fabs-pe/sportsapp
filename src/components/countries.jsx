@@ -19,16 +19,18 @@ const Countries = ()=>{
 
     return(
         <div>
-            <h2 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">Countries</h2>
-            <ul>
-                {countries.map((country) =>(
-                    <li key={country.name_en}>
-                    <img src={country.flag_url_32} alt={`${country.name_en} flag`} />
-                    {country.name_en}
-                    </li>
-                ))}
-            </ul>
+        <h2 className="mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl">Countries</h2>
+        <div className="grid grid-cols-8 gap-4">
+          {countries.map((country) => (
+            <div key={country.name_en} className="bg-white shadow-lg rounded-lg p-4">
+              <img className="w-full h-32 object-cover rounded-t-lg" src={country.flag_url_32} alt={`${country.name_en} flag`} />
+              <div className="mt-2 text-center">
+                <h3 className="text-xl font-semibold text-gray-800">{country.name_en}</h3>
+              </div>
+            </div>
+          ))}
         </div>
+      </div>
     );
 };
 
