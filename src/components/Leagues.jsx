@@ -20,18 +20,26 @@ const Leagues = ()=> {
 
     return (
         <div>
-            <h1>Leagues</h1>
-            <ul>
+            <h2 className='mb-4 text-4xl font-extrabold text-black-900 md:text-5xl lg:text-6xl'>Leagues</h2>
+            <div className='grid grid-cols-5 gap-2'>
                 {leagues.map((league)=>(
-                    <li key={league.idLeague}>{league.strLeague}
-                    ~{league.strSport}
-                    </li>
+                    <div key={league.idLeague} className='bg-gray shadow-lg rounded p-2'>
+                    <img className='w-full h-32 object-cover rounded-t-m' src={league.strLogo} alt="" />
+        
+                    </div>
                     
                 ))}
-            </ul>
+            </div>
         </div>
     );
 
 };
 
 export default Leagues;
+
+// {leagues.map((league)=>(
+//     <li key={league.idLeague}>{league.strLeague}
+//     ~{league.strBadge}
+//     </li>
+    
+// ))}

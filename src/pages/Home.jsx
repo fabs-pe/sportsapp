@@ -7,9 +7,6 @@ const Home = () => {
   return (
     <div>
       
-        <h1>One Stop Sports</h1>
-      
-      
       <Leagues />
       
     </div>
