@@ -12,6 +12,9 @@ const Navbar = () =>{
                         <li className="text-white pl-10">
                             <Link to="/countries">Countries</Link>
                         </li>
+                        <li className="text-white pl-10">
+                            <Link to="/football">Football</Link>
+                        </li>
 
                     </ul>
                     </div>

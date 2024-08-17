@@ -1,16 +1,13 @@
-import React from 'react';
+import React from 'react'
 import '../App.css';
-import Countries from '../components/countries';
+import Flags from '../components/footballCountries';
 
+const CountryFlag = () => {
+    return (
+        <div>
+            <Flags />
+        </div>
+    )
+}
 
-const AllCountries = () => {
-  return (
-    <div>
-      
-      <Countries />
-      
-    </div>
-  );
-};
-
-export default AllCountries;
+export default CountryFlag;

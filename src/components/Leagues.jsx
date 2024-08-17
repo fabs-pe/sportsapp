@@ -36,10 +36,3 @@ const Leagues = ()=> {
 };
 
 export default Leagues;
-
-// {leagues.map((league)=>(
-//     <li key={league.idLeague}>{league.strLeague}
-//     ~{league.strBadge}
-//     </li>
-    
-// ))}
