@@ -24,8 +24,8 @@ const Teams = () => {
             }
 
         } catch (error) {
-            console.error('Error Fetchinf Teams: ', error);
-            setTeam([]);
+            console.error('Error Fetching Teams: ', error);
+            setTeams([]);
         }
         setLoading(false); //stop loading after fetching
     };
