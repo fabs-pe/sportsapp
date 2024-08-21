@@ -15,6 +15,9 @@ const Navbar = () =>{
                         <li className="text-white pl-10">
                             <Link to="/football">Football</Link>
                         </li>
+                        <li className="text-white pl-10">
+                            <Link to="/venues">Venues</Link>
+                        </li>
 
                     </ul>
                     </div>

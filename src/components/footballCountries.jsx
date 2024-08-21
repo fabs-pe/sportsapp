@@ -35,6 +35,8 @@ const Flags = () => {
 
     return (
         <div className="p-6 max-w-6xl mx-auto">
+            <h1 className='mb-7 text-2xl text-center'>Pick a country to display all with the leagues in that country.</h1>
+
             <form onSubmit={handleSubmit} className="mb-6 flex space-x-4">
                 <input
                     type="text"
@@ -50,6 +52,7 @@ const Flags = () => {
                     Search
                 </button>
             </form>
+            
 
             {/* Display loading indicator */}
             {loading && <p className="text-center text-blue-500">Loading...</p>}
