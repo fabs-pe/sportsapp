@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import AllCountries from './pages/Countries';
 import CountryFlag from './pages/Football';
 import Stadiums from './components/venues';
+import Teams from './components/TeamSearch';
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
           <Route path="/countries" element={<AllCountries />} />
           <Route path="/football" element={<CountryFlag />} />
           <Route path="/venues" element={<Stadiums />} />
-          {/* <Route path="/teams" element={<Teams />} /> */}
+          <Route path="/teams" element={<Teams />} />
         </Routes>
       </div>
     </Router>

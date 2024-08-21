@@ -18,6 +18,9 @@ const Navbar = () =>{
                         <li className="text-white pl-10">
                             <Link to="/venues">Venues</Link>
                         </li>
+                        <li className="text-white pl-10">
+                            <Link to="/teams">Teams</Link>
+                        </li>
 
                     </ul>
                     </div>
