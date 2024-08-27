@@ -16,8 +16,8 @@ const Teams = () => {
 
             console.log ("Fetched data:", data); //Log API data
 
-            if (data.teamData){
-                setTeams(data.teamData);
+            if (data.teams){
+                setTeams(data.teams);
             } else {
                 setTeams([]);
                 console.log("No Teams Found");
@@ -58,13 +58,21 @@ const Teams = () => {
             )}
 
             {/* display search results in a grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid gap-6">
                 {teams.length > 0 && teams.map((team) => (
                     <div
                         key = {team.idTeam}
                         className="p-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-center"
                     >
+                        {team.strBadge ? (
+                            <img className="h-30 object-cover rounded-t-lg" src={team.strBadge} alt={`${team.strTeam} logo`} />
+                        ):(
+                            <p>No badge</p>
+                        )
+                        }
                         <h2 className="mb-4 text-2xl text-blue-600">{team.strTeam ? team.strTeam : 'Team name not available'}</h2>
+                        <h3> {team.strLeague ? team.strLeague : 'League not available'}</h3>
+                        <h4> {team.strDescriptionEN ? team.strDescriptionEN : 'description not avaliable'}</h4>
 
 
                     </div>

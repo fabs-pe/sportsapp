@@ -65,7 +65,7 @@ const Stadiums = () => {
                     >
                         <h2 className="mb-4 text-2xl text-blue-600">{venue.strVenue ? venue.strVenue : "Venue name not available"}</h2>
                         {venue.strLogo ? (
-                            <img className='h-40 objevt-cover rounded-t-lg' src={venue.strLogo} alt={`${venue.strVenue} logo`} />
+                            <img className='h-40 object-cover rounded-t-lg' src={venue.strLogo} alt={`${venue.strVenue} logo`} />
                         ) :(
                             <p>No badge available</p>
                     
