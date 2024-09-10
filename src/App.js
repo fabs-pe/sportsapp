@@ -6,10 +6,12 @@ import AllCountries from './pages/Countries';
 import CountryFlag from './pages/Football';
 import Stadiums from './components/venues';
 import Teams from './components/TeamSearch';
+import Footer from './components/Footer';
 
 
 const App = () => {
   return (
+    <div>
     <Router>
       <div>
         <Navbar />
@@ -22,6 +24,8 @@ const App = () => {
         </Routes>
       </div>
     </Router>
+    <Footer />
+    </div>
   );
 };
 

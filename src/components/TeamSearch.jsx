@@ -62,7 +62,7 @@ const Teams = () => {
                 {teams.length > 0 && teams.map((team) => (
                     <div
                         key = {team.idTeam}
-                        className="p-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-center"
+                        className="p-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transform  transition duration-300 ease-in-out text-center"
                     >
                         {team.strBadge ? (
                             <img className="h-30 object-cover rounded-t-lg" src={team.strBadge} alt={`${team.strTeam} logo`} />
