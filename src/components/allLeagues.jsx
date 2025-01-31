@@ -24,7 +24,7 @@ const Leagues = ()=> {
             <div className='grid grid-cols-5 gap-2'>
                 {leagues.map((league)=>(
                     <div key={league.idLeague} className='bg-gray shadow-lg rounded p-2'>
-                    <img className='w-full h-32 object-cover rounded-t-m' src={league.strLogo} alt="" />
+                    <a className='w-full h-32 object-cover rounded-t-m' href={`https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=${league.strLeague}`} src={league.strLeague}>{league.strLeague}</a>
         
                     </div>
                     

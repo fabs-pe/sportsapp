@@ -7,6 +7,7 @@ import CountryFlag from './pages/Football';
 import Stadiums from './components/venues';
 import Teams from './components/TeamSearch';
 import Footer from './components/Footer';
+import Leagues from './pages/Leagues';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/leagues" element={<Leagues />} />
           <Route path="/countries" element={<AllCountries />} />
           <Route path="/football" element={<CountryFlag />} />
           <Route path="/venues" element={<Stadiums />} />
