@@ -42,7 +42,6 @@ export const getTeams = async (league) => {
             `https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=${encodedLeague}`
         );
         const data = await response.json();
-        console.log("API Response:", data); // Debugging
         return data.teams || [];
     } catch (error) {
         console.error("Error fetching teams:", error);
