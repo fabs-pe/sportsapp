@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { useParams } from 'react-router-dom';
 
 const API_URL = 'https://www.thesportsdb.com/api/v1/json/3';
 
@@ -30,5 +31,21 @@ export const getSports = async () => {
     }catch(error){
         console.error("Error fetching Sports", error);
         throw error;
+    }
+};
+
+
+export const getTeams = async (league) => {
+    try {
+        const encodedLeague = encodeURIComponent(league); // Encode spaces & special characters
+        const response = await fetch(
+            `https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=${encodedLeague}`
+        );
+        const data = await response.json();
+        console.log("API Response:", data); // Debugging
+        return data.teams || [];
+    } catch (error) {
+        console.error("Error fetching teams:", error);
+        return [];
     }
 };

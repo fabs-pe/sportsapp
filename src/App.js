@@ -8,6 +8,7 @@ import Stadiums from './components/venues';
 import Teams from './components/TeamSearch';
 import Footer from './components/Footer';
 import Leagues from './pages/Leagues';
+import OneLeague from './components/OneLeague';
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/football" element={<CountryFlag />} />
           <Route path="/venues" element={<Stadiums />} />
           <Route path="/teams" element={<Teams />} />
+          <Route path="/oneLeague/:strLeague" element={<OneLeague />} />
         </Routes>
       </div>
     </Router>
