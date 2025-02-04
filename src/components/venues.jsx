@@ -60,7 +60,7 @@ const Stadiums = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {field.length > 0 && field.map((venue) => (
                     <div
-                        key={venue.idVenue} // Unique key
+                        key={venue.idVenue} 
                         className="p-4 bg-gray-100 rounded-lg shadow hover:shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-center"
                     >
                         <h2 className="mb-4 text-2xl text-blue-600">{venue.strVenue ? venue.strVenue : "Venue name not available"}</h2>
