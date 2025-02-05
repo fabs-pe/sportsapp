@@ -1,5 +1,4 @@
 import axios from 'axios'
-import { useParams } from 'react-router-dom';
 
 const API_URL = 'https://www.thesportsdb.com/api/v1/json/3';
 
